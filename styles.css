@@ -1,0 +1,27 @@
+html {
+  background-image: url('./space.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img {
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ -webkit-animation: shrink 15s infinite; /* Safari 4+ */
+  -moz-animation:    shrink 15s infinite; /* Fx 5+ */
+  -o-animation:      shrink 15s infinite; /* Opera 12+ */
+  animation:         shrink 15s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes shrink {
+  100% {
+    width: 0px;
+  }
+  0% {
+    width: 500px;
+  }
+}
