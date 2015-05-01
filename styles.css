@@ -45,4 +45,7 @@ div#narration {
   -moz-animation:    scroll 15s infinite; /* Fx 5+ */
   -o-animation:      scroll 15s infinite; /* Opera 12+ */
   animation:         scroll 15s infinite; /* IE 10+, Fx 29+ */
+  -webkit-animation:scroll 100s linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-style:preserve-3d;
 }
