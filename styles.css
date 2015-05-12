@@ -16,6 +16,8 @@ img#logo {
   animation:         shrink 30s ; 
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
 }
 /*img#ship {
   width: 500px;
