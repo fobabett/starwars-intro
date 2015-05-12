@@ -5,7 +5,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-img {
+img#logo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16,6 +16,25 @@ img {
   animation:         shrink 30s ; 
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+/*img#ship {
+  width: 500px;
+  position: absolute;
+  left: -1000px;
+  top: 50%;
+  -webkit-animation:fly 30s;
+  -webkit-animation-delay: 80s; 
+  animation-delay: 80s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}*/
+@-webkit-keyframes fly {
+  0% {
+    left: -1000px;
+  }
+  100% { 
+    left: 2000px;
+  }
 }
 
 @-webkit-keyframes scroll {
