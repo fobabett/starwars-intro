@@ -42,11 +42,11 @@ div#narration {
   font-size: 48px;  
   /*-webkit-transform: rotateX(45deg);*/
   position: absolute;
-   -webkit-animation: scroll 15s ; 
-  -moz-animation:    scroll 15s ; 
-  -o-animation:      scroll 15s ; 
-  animation:         scroll 15s ; 
-  -webkit-animation:scroll 70s linear;
+   -webkit-animation: scroll 110s ; 
+  -moz-animation:    scroll 110s ; 
+  -o-animation:      scroll 110s ; 
+  animation:         scroll 110s ; 
+  -webkit-animation:scroll 110s linear;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
