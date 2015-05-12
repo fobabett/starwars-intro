@@ -5,23 +5,24 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-
 img {
-   position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
- -webkit-animation: shrink 15s infinite; /* Safari 4+ */
-  -moz-animation:    shrink 15s infinite; /* Fx 5+ */
-  -o-animation:      shrink 15s infinite; /* Opera 12+ */
-  animation:         shrink 15s infinite; /* IE 10+, Fx 29+ */
+ -webkit-animation: shrink 30s ; 
+  -moz-animation:    shrink 30s ; 
+  -o-animation:      shrink 30s ; 
+  animation:         shrink 30s ; 
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes scroll {
   0% { -webkit-transform:rotateX(80deg) translateZ(300px) translateY(1100px);opacity:1;}
   40% { -webkit-transform:rotateX(80deg) translateZ(300px) translateY(-340px);opacity:1;}
   80% { -webkit-transform:rotateX(80deg) translateZ(300px) translateY(-1780px);opacity:0;}
-  100% { -webkit-transform:rotateX(80deg) translateZ(300px) translateY(-2500px);opacity:0;}
+  100% { -webkit-transform:rotateX(80deg) translateZ(300px) filltranslateY(-2500px);opacity:0;}
 }
 
 @-webkit-keyframes shrink {
@@ -39,13 +40,15 @@ div#title {
 div#narration {
   color: #E2B421;
   font-size: 48px;  
-  -webkit-transform: rotateX(45deg);
+  /*-webkit-transform: rotateX(45deg);*/
   position: absolute;
-   -webkit-animation: scroll 15s infinite; /* Safari 4+ */
-  -moz-animation:    scroll 15s infinite; /* Fx 5+ */
-  -o-animation:      scroll 15s infinite; /* Opera 12+ */
-  animation:         scroll 15s infinite; /* IE 10+, Fx 29+ */
-  -webkit-animation:scroll 100s linear;
+   -webkit-animation: scroll 15s ; 
+  -moz-animation:    scroll 15s ; 
+  -o-animation:      scroll 15s ; 
+  animation:         scroll 15s ; 
+  -webkit-animation:scroll 70s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
   -webkit-transform-style:preserve-3d;
 }
